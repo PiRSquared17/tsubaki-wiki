@@ -1,0 +1,34 @@
+Content-type: text/html; charset=Shift_JIS
+
+
+<html>
+<head>
+	<title>椿ウヰキ ： </title>
+	<link rel="stylesheet" href=theme\style.css type="text/css" />
+</head>
+<body bgcolor="white">
+<table width="100%" border="0">
+	<tr valign="top">
+		<td width="150">
+			<a href="tsubaki-wiki.nako?トップ"><img src="tsubaki-wiki.png" border="0"></a>
+		</td>
+		<td align="left">
+			<h1>椿ウヰキ ： </h1>
+		</td>
+		<td align="right">
+			<a href="tsubaki-wiki.nako?トップ">トップに戻る</a> | 
+			編集 | 
+			ページ一覧 | 
+			<a href="tsubaki-wiki.nako?help">ヘルプ</a>
+		</td>
+	</tr>
+</table>
+<hr>
+
+<p>コマンド=ext_test_plugin
+</p>
+<hr>
+<a href="http://www.catch.jp/wiki/index.php?tsubaki-wiki" target="_blank">椿ウヰキ</a>　Copyright 2010 Yutaka Kachi　Ver 0.1.94
+</body>
+</html>
+

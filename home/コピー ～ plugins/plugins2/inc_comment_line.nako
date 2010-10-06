@@ -1,0 +1,17 @@
+# 1行コメント - プラグイン
+# Copyright 2010 Yutaka Kachi
+#
+
+
+●コメント欄_１行(ハッシュ文で)	＃プラグイン
+	変換文＝「<form action="{スクリプトURL}" method="post">
+		<input type="hidden" name="mycmd" value="plugin">
+		<input type="hidden" name="myplugin" value="write_comment">
+		<input type="hidden" name="mypage" value="{ハッシュ文@ページ}">
+		<div>コメント<input type="text" size="60" name="mymsg">
+		<input type="submit" value="OK">
+		<input type="reset" value="キャンセル"></div>
+	</form>」
+
+	変換文で戻る
+
