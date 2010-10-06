@@ -4,7 +4,7 @@ reademe.txt
 椿ウィキの説明
 http://www.catch.jp/wiki/index.php?tsubaki-wiki
 
-2010-05-03
+2010-10-07
 
 「椿ウヰキ」(つばきうぃき)は、wikiと呼ばれる文書管理ソフトウェアの一種です。
 
