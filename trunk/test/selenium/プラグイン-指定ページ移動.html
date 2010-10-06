@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="" />
+<title>プラグイン-指定ページ移動</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">プラグイン-指定ページ移動</td></tr>
+</thead><tbody>
+<!--◎プラグイン - 指定ページ移動（jump_page.nako)をテストする -->
+<!--◎テスト表示-->
+<tr>
+	<td>open</td>
+	<td>tsubaki-wiki.nako?plugins_test_jump-page</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>椿ウヰキ ： plugins_test_jump-page</td>
+	<td></td>
+</tr>
+<!--◎情報を入力-->
+<tr>
+	<td>type</td>
+	<td>mymsg</td>
+	<td>test</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//input[@value='OK']</td>
+	<td></td>
+</tr>
+<!--◎ページ移動を確認-->
+<tr>
+	<td>assertTitle</td>
+	<td>椿ウヰキ ： test</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>世界の皆さん、こんにちは。</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

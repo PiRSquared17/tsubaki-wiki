@@ -1,0 +1,33 @@
+# 外部呼出テスト - プラグイン
+# Copyright 2010 Yutaka Kachi
+
+
+●テスト情報(ハッシュ文で)	＃プラグイン：内部
+	変換文＝「<form action="{スクリプトURL}" method="post">
+		<input type="hidden" name="mycmd" value="plugin">
+		<input type="hidden" name="myplugin" value="test_msg">
+		<input type="hidden" name="mypage" value="{ハッシュ文@ページ}">
+		<!-- <div>テスト情報を表示<input type="submit" value="OK"></div> -->
+		<div>テスト情報を表示<input type="text" size="60" name="mymsg">
+		<input type="submit" value="OK">
+		<input type="reset" value="キャンセル"></div>
+	</form>」
+
+	変換文で戻る
+
+●test_msg(ハッシュ文で)	＃プラグイン：外部
+
+	ハッシュ文@ページを「編集不可」でヘッダー文生成して、表示する
+	「<p>プラグイン起動中</p>」を表示する
+
+	変換文とは文字列
+	
+	ハッシュ文のハッシュキー列挙
+	それを反復
+		ハッシュ文@対象の改行を「」に置換
+		変換文に「<p>{対象}：{それ}</p>」を一行追加
+
+	変換文を表示する
+
+	フッター文生成して、表示する
+

@@ -1,0 +1,36 @@
+# 1行コメント - プラグイン
+# Copyright 2010 Yutaka Kachi
+#
+
+
+●コメント欄_１行(ハッシュ文で)	＃プラグイン：内部
+	変換文＝「<form action="{スクリプトURL}" method="post">
+		<input type="hidden" name="mycmd" value="plugin">
+		<input type="hidden" name="myplugin" value="write_comment">
+		<input type="hidden" name="mypage" value="{ハッシュ文@ページ}">
+		<div>コメント<input type="text" size="60" name="mymsg">
+		<input type="submit" value="OK">
+		<input type="reset" value="キャンセル"></div>
+	</form>」
+
+	変換文で戻る
+
+
+●write_comment(ハッシュ文で)	＃プラグイン：外部
+	変換文とは文字列
+
+	ファイルパス＝DBファイルパス＆「\」＆ハッシュ文@mypage
+
+	もし、(ファイルパスの存在＝はい)ならば、
+		##読込
+		本文にファイルパスを読む
+		変換文に本文を一行追加
+		変換文に「plugin:write_comment」を一行追加
+
+		##書込
+		変換文にハッシュ文@mymsgを一行追加
+		ファイルパスをファイルロック
+		変換文をファイルパスに保存
+		ファイルパスをファイルロック解除
+
+	ハッシュ文@mypageでページ指定読込する

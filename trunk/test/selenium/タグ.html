@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="" />
+<title>タグ</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">タグ</td></tr>
+</thead><tbody>
+<!--◎水平線-->
+<tr>
+	<td>open</td>
+	<td>tsubaki-wiki.nako?tag_test_hr</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>椿ウヰキ ： tag_test_hr</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyHtmlSource</td>
+	<td>glob:*&lt;hr&gt;*水平線*</td>
+	<td></td>
+</tr>
+<!--◎見出し1-->
+<tr>
+	<td>open</td>
+	<td>tsubaki-wiki.nako?tag_test_h1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>椿ウヰキ ： tag_test_h1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyHtmlSource</td>
+	<td>glob:*&lt;h1&gt;見出し1&lt;/h1&gt;*</td>
+	<td></td>
+</tr>
+<!--◎見出し2-->
+<tr>
+	<td>open</td>
+	<td>tsubaki-wiki.nako?tag_test_h2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>椿ウヰキ ： tag_test_h2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyHtmlSource</td>
+	<td>glob:*&lt;h2&gt;見出し2&lt;/h2&gt;*</td>
+	<td></td>
+</tr>
+<!--◎見出し3-->
+<tr>
+	<td>open</td>
+	<td>tsubaki-wiki.nako?tag_test_h3</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>椿ウヰキ ： tag_test_h3</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyHtmlSource</td>
+	<td>glob:*&lt;h3&gt;見出し3&lt;/h3&gt;*</td>
+	<td></td>
+</tr>
+<!--◎見出し4 - 見出し3として解釈される-->
+<tr>
+	<td>open</td>
+	<td>tsubaki-wiki.nako?tag_test_h4</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>椿ウヰキ ： tag_test_h4</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyHtmlSource</td>
+	<td>glob:*&lt;h3&gt;?見出し4&lt;/h3&gt;*</td>
+	<td></td>
+</tr>
+<!--◎リスト-->
+<tr>
+	<td>open</td>
+	<td>tsubaki-wiki.nako?tag_test_list</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>椿ウヰキ ： tag_test_list</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyHtmlSource</td>
+	<td>glob:*&lt;ul&gt;&lt;li&gt;aaaaa?&lt;/li&gt;?&lt;li&gt;bbbbb?&lt;/li&gt;?&lt;li&gt;ccccc?&lt;/li&gt;?&lt;/ul&gt;*</td>
+	<td></td>
+</tr>
+<!--◎箇条書き-->
+<tr>
+	<td>open</td>
+	<td>tsubaki-wiki.nako?tag_test_numbering</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>椿ウヰキ ： tag_test_numbering</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyHtmlSource</td>
+	<td>glob:*&lt;ol&gt;&lt;li&gt;あああああ?&lt;/li&gt;?&lt;li&gt;いいいいい?&lt;/li&gt;?&lt;li&gt;ううううう?&lt;/li&gt;?&lt;/ol&gt;*</td>
+	<td></td>
+</tr>
+<!--◎段落-->
+<tr>
+	<td>open</td>
+	<td>tsubaki-wiki.nako?tag_test_p</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>椿ウヰキ ： tag_test_p</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyHtmlSource</td>
+	<td>glob:*&lt;p&gt;段落１。?段落２。&lt;/p&gt;*&lt;p&gt;段落３。&lt;/p&gt;*</td>
+	<td></td>
+</tr>
+<!--◎そのまま-->
+<tr>
+	<td>open</td>
+	<td>tsubaki-wiki.nako?tag_test_pre</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>椿ウヰキ ： tag_test_pre</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyHtmlSource</td>
+	<td>glob:*&lt;pre&gt;ここは、そのまま表示?&lt;/pre&gt;*</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

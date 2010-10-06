@@ -1,0 +1,41 @@
+#!C:\xampp\cnako\cnako.exe
+#１行目は、CGIの実行環境に合わせて書き換えること
+
+# 日本語プログラミング言語なでしこによるWikiクローン
+# Copyright 2010 Yutaka Kachi
+#
+# 0.1.94 2010-08-30 ファイルを分割。ページ移動APIの仕組み変更
+# 0.1.93 2010-08-24b 外部呼出プラグインの表示位置を、主処理に変更
+# 0.1.93 2010-08-21b 主となる表示位置を、主処理に変更
+# 0.1.93 2010-08-17コード取り込み順を調整。プラグインを外部と内部で分離。
+# 0.1.93 2010-08-16a htmlファイルを切り離す。
+# 0.1.92 単体テスト対応
+# 0.1.91 テスト対応＆リファクタリング
+# 001 ロゴの追加に伴い、編集欄の行数を調整
+
+
+#---- ライブラリの読込み ----
+
+!「cgi.nako」を取り込む
+!「tsubaki-config.nako」を取り込む
+!「lib.nako」を取り込む
+!「lib_api.nako」を取り込む
+
+!「plugins_list_inc.nako」を取り込む
+!「plugins_call_inc.nako」を取り込む
+!「lib_wiki_tags.nako」を取り込む
+
+!「lib_html_generate.nako」を取り込む
+!「plugins_list_ext.nako」を取り込む
+!「plugins_call_ext.nako」を取り込む
+
+!「lib_command.nako」を取り込む
+!「main.nako」を取り込む
+
+
+#---- 起動する ----
+主処理する
+終了
+
+
+
