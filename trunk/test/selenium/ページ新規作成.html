@@ -28,8 +28,13 @@
 	<td>世界の皆さん、こんにちは。<br />なでしこWikiです。<br /><br />[[書き込みテスト]]</td>
 </tr>
 <tr>
+	<td>type</td>
+	<td>post_key</td>
+	<td>12345</td>
+</tr>
+<tr>
 	<td>clickAndWait</td>
-	<td>//input[@value='書込み']</td>
+	<td>//input[@value='書き込む']</td>
 	<td></td>
 </tr>
 <!--◎新規リンクを確認-->
@@ -50,8 +55,13 @@
 </tr>
 <!--◎新規ページへ移動-->
 <tr>
+	<td>type</td>
+	<td>post_key</td>
+	<td>12345</td>
+</tr>
+<tr>
 	<td>clickAndWait</td>
-	<td>//input[@value='書込み']</td>
+	<td>//input[@value='書き込む']</td>
 	<td></td>
 </tr>
 <!--◎ページ確認-->
@@ -77,8 +87,13 @@
 	<td></td>
 </tr>
 <tr>
+	<td>type</td>
+	<td>post_key</td>
+	<td>12345</td>
+</tr>
+<tr>
 	<td>clickAndWait</td>
-	<td>//input[@value='書込み']</td>
+	<td>//input[@value='書き込む']</td>
 	<td></td>
 </tr>
 <!--◎ページ削除を確認-->
@@ -104,8 +119,44 @@
 	<td>世界の皆さん、こんにちは。<br />なでしこWikiです。</td>
 </tr>
 <tr>
+	<td>type</td>
+	<td>post_key</td>
+	<td>12345</td>
+</tr>
+<tr>
 	<td>clickAndWait</td>
-	<td>//input[@value='書込み']</td>
+	<td>//input[@value='書き込む']</td>
+	<td></td>
+</tr>
+<!--◎書込キーのエラー処理-->
+<tr>
+	<td>open</td>
+	<td>tsubaki-wiki.nako?test</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=編集</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>mymsg</td>
+	<td>世界の皆さん、こんにちは。<br />なでしこWikiです。</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>post_key</td>
+	<td>11111</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//input[@value='書き込む']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>書込キーが間違っています。 </td>
 	<td></td>
 </tr>
 
