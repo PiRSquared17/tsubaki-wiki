@@ -1,8 +1,8 @@
 ＃プラグイン取込プログラム_外部
-    ＃自動生成 Date2010/08/18, Time01:02:18
-!"plugins\ext_comment_line.nako"を取り込む
-!"plugins\ext_jump_page.nako"を取り込む
-!"plugins\ext_test_msg.nako"を取り込む
-!"plugins\ext_test_plugin.nako"を取り込む
-!"plugins\ext_tree_list.nako"を取り込む
+    ＃自動生成 Date2010/11/29, Time00:39:13
+!"plugins\basics\ext_comment_line.nako"を取り込む
+!"plugins\samples\ext_jump_page.nako"を取り込む
+!"plugins\samples\ext_test_msg.nako"を取り込む
+!"plugins\samples\ext_test_plugin.nako"を取り込む
+!"plugins\samples\ext_tree_list.nako"を取り込む
 
