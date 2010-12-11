@@ -9,7 +9,7 @@ Content-type: text/html; charset=Shift_JIS
 <body bgcolor="white">
 <table width="100%" border="0">
 	<tr valign="top">
-		<td width="150">
+		<td width="100">
 			<a href="tsubaki-wiki.nako?トップ"><img src="tsubaki-wiki.png" border="0"></a>
 		</td>
 		<td align="left">
@@ -28,7 +28,7 @@ Content-type: text/html; charset=Shift_JIS
 <p>コマンド=ext_test_plugin
 </p>
 <hr>
-<a href="http://www.catch.jp/wiki/index.php?tsubaki-wiki" target="_blank">椿ウヰキ</a>　Copyright 2010 Yutaka Kachi　Ver 0.4
+<a href="http://www.catch.jp/wiki/index.php?tsubaki-wiki" target="_blank">椿ウヰキ</a>　Copyright 2010 Yutaka Kachi　Ver 0.6
 </body>
 </html>
 
