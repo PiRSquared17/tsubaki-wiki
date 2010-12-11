@@ -1,5 +1,6 @@
 ＃プラグイン取込プログラム_外部
-    ＃自動生成 Date2010/11/29, Time00:39:13
+    ＃自動生成 Date2010/12/12, Time00:06:59
+!"plugins\basics\ext_article.nako"を取り込む
 !"plugins\basics\ext_comment_line.nako"を取り込む
 !"plugins\samples\ext_jump_page.nako"を取り込む
 !"plugins\samples\ext_test_msg.nako"を取り込む
