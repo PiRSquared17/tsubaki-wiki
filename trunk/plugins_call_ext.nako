@@ -1,8 +1,11 @@
 ＃プラグイン呼出分岐_外部
-    ＃自動生成 Date2010/11/29, Time00:39:13
+    ＃自動生成 Date2010/12/12, Time00:06:59
 
 ●プラグイン呼出_外部(処理フォームで、プラグイン名を)
 	プラグイン名で条件分岐
+		「write_article」ならば
+			処理フォームでwrite_article
+
 		「write_comment」ならば
 			処理フォームでwrite_comment
 
