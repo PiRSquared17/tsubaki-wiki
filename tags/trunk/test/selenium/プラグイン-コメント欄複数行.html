@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="" />
+<title>プラグイン-コメント欄一行</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">プラグイン-コメント欄一行</td></tr>
+</thead><tbody>
+<!--◎プラグイン - コメント欄１行（comment_line.nako)をテストする -->
+<!--◎コメント欄ページを表示-->
+<tr>
+	<td>open</td>
+	<td>tsubaki-wiki.nako?plugins_test_article</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>椿ウヰキ ： plugins_test_article</td>
+	<td></td>
+</tr>
+<!--◎情報を入力-->
+<tr>
+	<td>type</td>
+	<td>mymsg</td>
+	<td>あいうえお</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>myname</td>
+	<td>名前</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>post_key</td>
+	<td>12345</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//input[@value='記事を投稿']</td>
+	<td></td>
+</tr>
+<!--◎コメント表示を確認-->
+<tr>
+	<td>assertTitle</td>
+	<td>椿ウヰキ ： plugins_test_article</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>あいうえお</td>
+	<td></td>
+</tr>
+<!--◎書込キーエラーのテスト-->
+<tr>
+	<td>type</td>
+	<td>mymsg</td>
+	<td>あいうえお</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>myname</td>
+	<td>名前</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>post_key</td>
+	<td>11111</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//input[@value='記事を投稿']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>椿ウヰキ ： plugins_test_article</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>書込キーが違います</td>
+	<td></td>
+</tr>
+<!--◎書き込みコメントを削除-->
+<tr>
+	<td>clickAndWait</td>
+	<td>link=編集</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>mymsg</td>
+	<td>#コメント欄_複数行</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>post_key</td>
+	<td>12345</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//input[@value='書き込む']</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>
