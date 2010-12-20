@@ -1,0 +1,24 @@
+#テスト対象プログラムを指定
+#
+#2010-09-03 対象アプリのファイル分割に合わせて、取り込み対象を分割
+#2010-07-17 新規作成
+
+#テスト対象となるプログラムファイルを、取り込み指定
+#!「tsubaki-wiki.nako」を取り込む
+
+!「cgi.nako」を取り込む
+!「tsubaki-config.nako」を取り込む
+!「lib.nako」を取り込む
+!「lib_api.nako」を取り込む
+
+!「plugins_list_inc.nako」を取り込む
+!「plugins_call_inc.nako」を取り込む
+!「lib_wiki_tags.nako」を取り込む
+
+!「lib_html_generate.nako」を取り込む
+!「plugins_list_ext.nako」を取り込む
+!「plugins_call_ext.nako」を取り込む
+
+!「lib_command.nako」を取り込む
+!「main.nako」を取り込む
+
