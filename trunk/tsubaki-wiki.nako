@@ -1,5 +1,5 @@
 #!C:\xampp\cnako\cnako.exe
-#１行目は、CGIの実行環境に合わせて書き換えること
+#１行目は、CGIの実行環境に合わせて書き換えること（IISでは不要）
 
 # 日本語プログラミング言語なでしこによるWikiクローン
 # Copyright 2010 Yutaka Kachi

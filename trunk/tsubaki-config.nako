@@ -1,11 +1,17 @@
 
 #---- 初期設定 ----
 サイト名=「椿ウヰキ」
-バージョン＝「Ver 0.6」
+バージョン＝「Ver 0.7」
 著作権表示＝「Copyright 2010 Yutaka Kachi」
-DBファイルパス＝「home」
+
+
+DBファイルパス＝「home」	#XAMPP用
+
+#ホームパス＝母艦パス					#tsukaeru.net用
+#DBファイルパス＝「{ホームパス}home」	#tsukaeru.net用
+
 スクリプトURL＝「tsubaki-wiki.nako」
-テストフォルダ＝「C:\Documents and Settings\kachi\My Documents\2010_works\20101212_tsubaki-wiki06rc1」&「\test\」
+テストフォルダ＝「C:\Documents and Settings\kachi\My Documents\SVN\tsubaki-wiki」&「\test\」
 
 リンクタグ＝「\[\[.+?\]\]」
 表紙名＝「トップ」
@@ -20,9 +26,10 @@ HTMLコンテンツ型＝「Content-type: text/html; charset=Shift_JIS」
 
 処理フォームとは、ハッシュ
 
-
 #テーマ設定
-テーマパス＝「theme」
+テーマパス＝「theme」	#XAMPP用
+#テーマパス＝「{ホームパス}\theme」	#tsukaeru.net用
+
 ヘッダーファイル＝テーマパス&「\header.html」
 フッターファイル＝テーマパス&「\footer.html」
 エディターファイル＝テーマパス&「\edit.html」
