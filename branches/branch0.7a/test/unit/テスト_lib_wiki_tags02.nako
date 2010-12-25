@@ -145,6 +145,16 @@
 	結果文＝「あいう<a href="http://example.com/foo">http://example.com/foo</a>かきく<a href="http://example.com/foo">http://example.com/foo</a>さしす」
 	(テキスト文をリンク変換)と結果文でテスト実行。
 
+●テスト_リンク4_リンク変換　#途中に「?」あり
+	テキスト文＝「あいうえおhttp://example.com/foo/?tsubakiかきくけこ」
+	結果文＝「あいうえお<a href="http://example.com/foo/?tsubaki">http://example.com/foo/?tsubaki</a>かきくけこ」
+	(テキスト文をリンク変換)と結果文でテスト実行。
+
+●テスト_リンク5_リンク変換　#途中に「?」と「=」あり
+	テキスト文＝「あいうえおhttp://example.com/foo/?tsubaki=123かきくけこ」
+	結果文＝「あいうえお<a href="http://example.com/foo/?tsubaki=123">http://example.com/foo/?tsubaki=123</a>かきくけこ」
+	(テキスト文をリンク変換)と結果文でテスト実行。
+
 ●テスト_https_リンク変換
 	テキスト文＝「あいうえおhttps://example.com/foo/かきくけこ」
 	結果文＝「あいうえお<a href="https://example.com/foo/">https://example.com/foo/</a>かきくけこ」
