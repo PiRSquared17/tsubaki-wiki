@@ -53,6 +53,7 @@ http://www.catch.jp/wiki/index.php?tsubaki-wiki
 ++なでしこをCGIとして動作するよう設定 > [[nadeshiko_cgi/Apacheでの利用:http://nadesi.com/wiki/index.php?catch%2Fnadeshiko_cgi%2FApache%A4%C7%A4%CE%CD%F8%CD%D1]]
 +椿ウヰキのインストール
 ++ダウンロードしたファイルを解凍する
+++「tsubaki-wiki.nako」と「tsubaki-config.nako」を必要に応じて書き換える
 ++解凍したファイルを、C:\XAMPP\tsubaki に全てコピーする
 +動作テスト
 ++Webブラウザから、http://127.0.0.1/tsubaki/tsubaki-wiki.nako にアクセスする
