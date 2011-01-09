@@ -1,0 +1,68 @@
+# アンケート選択 - プラグイン
+# Copyright 2010 Yutaka Kachi
+#
+# 2011-01-03 選択肢作成 -> 表タグ行抽出
+# 2010-12-28 アンケート選択プラグイン
+# アンケート回答(ext_basic_questions.nako)とセットで使う
+
+
+●アンケート_選択(ハッシュ文で)	＃プラグイン
+
+#	選択肢データ＝「サンプル1,サンプル2,サンプル3」
+#	選択肢データ＝選択肢データを「,」で区切る
+
+	ハッシュ文@ページから表タグ行抽出
+	それの1を表列取得
+	セレクトメニュー文＝それで選択肢作成する
+
+	変換文＝「<form action="{スクリプトURL}" method="post">
+		<input type="hidden" name="mycmd" value="plugin">
+		<input type="hidden" name="myplugin" value="questions_answer">
+		<input type="hidden" name="mypage" value="{ハッシュ文@ページ}">
+		<div>
+		回答を選択：<br>」＆セレクトメニュー文＆「<br>
+		コメント　：<br>
+		<input type="text" name="mymsg" style="width:400px;"><br><br>
+		投稿キー：<input type="password" name="post_key" size="15" maxlength="30">
+		<input type="submit" value="投稿">
+		</div>
+	</form>」
+
+	変換文で戻る
+
+
+●表タグ行抽出(ページから)	#外部呼出プラグインからも使用
+	表タグ行は配列
+
+	ファイルパス＝DBファイルパス＆「\」＆ページ
+	##読込
+	もし、(ファイルパスの存在＝はい)ならば、
+		本文にファイルパスを読む
+
+		パターン＝「\A\,」
+		選択肢文は文字列
+		本文を反復
+			対象をパターンで正規表現マッチ
+			もし、それが空でなければ、
+				対象のパターンを「」へ正規表現置換
+				選択肢文にそれを一行追加
+
+		表タグ行＝選択肢文をCSV取得
+		表タグ行の0を配列削除	#1行目の見出しを削除
+	違えば
+		表タグ行＝0
+
+	表タグ行で戻る
+
+
+●選択肢作成(テキスト配列で)
+	作成文＝「<select name="answer" size="1" style="width:400px;">」
+	作成文に「<option value="0">(回答を選択してください)</option>」を一行追加
+	
+	テキスト配列を反復
+			作成文に「<option value="{対象}">{対象}</option>」を一行追加
+
+	作成文に「<option value="1">(そのほか)</option>」を一行追加
+	作成文に「</select>」を一行追加
+	作成文で戻る
+
