@@ -1,0 +1,18 @@
+<form action="tsubaki-wiki.nako" method="post">
+		<input type="hidden" name="mycmd" value="plugin">
+		<input type="hidden" name="myplugin" value="questions_answer">
+		<input type="hidden" name="mypage" value="plugins_test_questions">
+		<div>
+		回答を選択：<br><select name="answer" size="1" style="width:400px;"><option value="0">(回答を選択してください)</option>
+<option value="回答１">回答１</option>
+<option value="回答２">回答２</option>
+<option value="回答３">回答３</option>
+<option value="1">(そのほか)</option>
+</select>
+<br>
+		コメント　：<br>
+		<input type="text" name="mymsg" style="width:400px;"><br><br>
+		投稿キー：<input type="password" name="post_key" size="15" maxlength="30">
+		<input type="submit" value="投稿">
+		</div>
+	</form>
