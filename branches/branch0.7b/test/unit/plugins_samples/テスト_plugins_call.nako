@@ -3,7 +3,7 @@
 #===========================================================
 
 
-テストplugins_samplesパス＝「{テストパス}\plugins_samples」
+テストplugins_samplesパス＝「{テストパス}plugins_samples\」
 
 #========= テスト_プラグイン呼出内部 ==========
 
@@ -40,7 +40,7 @@
 	引数ハッシュ＠コマンド＝「ext_test_plugin」
 
 	結果文は文字列
-	読込文に「{テストplugins_samplesパス}\テスト_plugins_呼出外部1_結果文.txt」を開く
+	読込文に「{テストplugins_samplesパス}テスト_plugins_呼出外部1_結果文.txt」を開く
 	読込文を反復
 		対象の「###ver-text###」をバージョンに単置換
 		結果文にそれを一行追加

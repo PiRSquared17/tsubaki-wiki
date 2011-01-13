@@ -11,7 +11,7 @@ DBファイルパス＝「home」	#XAMPP用
 #DBファイルパス＝「{ホームパス}home」	#tsukaeru.net用
 
 スクリプトURL＝「tsubaki-wiki.nako」
-テストフォルダ＝「C:\Documents and Settings\kachi\My Documents\SVN\_tsubaki-wiki」&「\test」
+テストフォルダ＝「C:\Documents and Settings\kachi\My Documents\SVN\_tsubaki-wiki\」&「test\」
 
 リンクタグ＝「\[\[.+?\]\]」
 表紙名＝「トップ」
