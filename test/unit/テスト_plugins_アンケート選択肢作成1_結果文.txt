@@ -1,6 +1,0 @@
-<select name="answer" size="1" style="width:400px;"><option value="0">(‰ñ“š‚ð‘I‘ð‚µ‚Ä‚­‚¾‚³‚¢)</option>
-<option value="1,‰ñ“š‚P,0">1,‰ñ“š‚P,0</option>
-<option value="2,‰ñ“š‚Q,0">2,‰ñ“š‚Q,0</option>
-<option value="3,‰ñ“š‚R,0">3,‰ñ“š‚R,0</option>
-<option value="1">(‚»‚Ì‚Ù‚©)</option>
-</select>
