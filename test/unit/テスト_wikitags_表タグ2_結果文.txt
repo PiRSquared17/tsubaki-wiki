@@ -1,7 +1,0 @@
-<table border="1"><tr><td>111</td><td>222</td><td>333</td><td>444</td><td>555
-</td></tr>
-<tr><td>666</td><td>777</td><td>888</td><td>999</td><td>000
-</td></tr>
-<tr><td>‚ </td><td>‚¢</td><td>‚¤</td><td>‚¦</td><td>‚¨
-</td></tr>
-</table>
