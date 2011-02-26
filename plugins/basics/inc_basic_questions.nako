@@ -8,7 +8,7 @@
 #
 #注記：
 # アンケート回答(ext_basic_questions.nako)とセットで使う
-# アンケート選択肢を表タグ(,)で記述する。選択肢以外には表タグを使わないこと。
+
 
 
 ●アンケート_選択(ハッシュ文で)	＃プラグイン
@@ -29,6 +29,7 @@
 	違えば
 		セレクトメニュー文＝「ページがありません」
 
+	変換文とは文字列
 	変換文＝「<form action="{スクリプトURL}" method="post">
 		<input type="hidden" name="mycmd" value="plugin">
 		<input type="hidden" name="myplugin" value="questions_answer">
