@@ -7,7 +7,7 @@
 <option value="回答１">回答１</option>
 <option value="回答２">回答２</option>
 <option value="回答３">回答３</option>
-<option value="1">(そのほか)</option>
+<option value="1">(その他)</option>
 </select>
 <br>
 		コメント　：<br>
