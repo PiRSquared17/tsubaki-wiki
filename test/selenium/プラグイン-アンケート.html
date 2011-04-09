@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://127.0.0.1/tsubaki/" />
+<title>プラグイン-アンケート</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">プラグイン-アンケート</td></tr>
+</thead><tbody>
+<!--◎プラグイン - アンケート（basic-questions.nako)をテストする -->
+<!--◎アンケートページを表示-->
+<tr>
+	<td>open</td>
+	<td>tsubaki-wiki.nako?plugins_test_questions</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>椿ウヰキ ： plugins_test_questions</td>
+	<td></td>
+</tr>
+<!--◎エラー：書込キー-->
+<tr>
+	<td>clickAndWait</td>
+	<td>//input[@value='投稿']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>書込キーが違います</td>
+	<td></td>
+</tr>
+<!--◎エラー：未選択-->
+<tr>
+	<td>type</td>
+	<td>post_key</td>
+	<td>12345</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//input[@value='投稿']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>回答を選択してください</td>
+	<td></td>
+</tr>
+<!--◎回答１を選択-->
+<tr>
+	<td>select</td>
+	<td>answer</td>
+	<td>回答１</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>post_key</td>
+	<td>12345</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//input[@value='投稿']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyHtmlSource</td>
+	<td>glob:*&lt;td&gt;回答１&lt;/td&gt;&lt;td&gt;1*</td>
+	<td></td>
+</tr>
+<!--◎コメント書込-->
+<tr>
+	<td>select</td>
+	<td>answer</td>
+	<td>(その他)</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>mymsg</td>
+	<td>あいうえお</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>post_key</td>
+	<td>12345</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//input[@value='投稿']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>あいうえお</td>
+	<td></td>
+</tr>
+<!--◎その他を投稿-->
+<tr>
+	<td>select</td>
+	<td>answer</td>
+	<td>(その他)</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>post_key</td>
+	<td>12345</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//input[@value='投稿']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyHtmlSource</td>
+	<td>glob:*&lt;td&gt;-&lt;/td&gt;&lt;td&gt;その他&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;*</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>
