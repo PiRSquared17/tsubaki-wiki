@@ -1,0 +1,29 @@
+＃プラグイン呼出分岐_外部
+    ＃自動生成 Date2011/01/09, Time23:57:35
+
+●プラグイン呼出_外部(処理フォームで、プラグイン名を)
+	プラグイン名で条件分岐
+		「write_article」ならば
+			処理フォームでwrite_article
+
+		「questions_answer」ならば
+			処理フォームでquestions_answer
+
+		「write_comment」ならば
+			処理フォームでwrite_comment
+
+		「jump_page」ならば
+			処理フォームでjump_page
+
+		「test_msg」ならば
+			処理フォームでtest_msg
+
+		「ext_test_plugin」ならば
+			処理フォームでext_test_plugin
+
+		「tree_list」ならば
+			処理フォームでtree_list
+
+		違えば
+			「外部からのプラグイン名の呼出に失敗しました。」で戻る。
+
