@@ -28,7 +28,7 @@ Content-type: text/html; charset=Shift_JIS
 <p>コマンド=ext_test_plugin
 </p>
 <hr>
-<a href="http://www.catch.jp/wiki/index.php?tsubaki-wiki" target="_blank">椿ウヰキ</a>　Copyright 2010 Yutaka Kachi　###ver-text###
+<a href="http://www.catch.jp/wiki/index.php?tsubaki-wiki" target="_blank">椿ウヰキ</a>　Copyright 2010-2011 Yutaka Kachi　Ver 0.8
 </body>
 </html>
 
