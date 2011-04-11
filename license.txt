@@ -1,6 +1,5 @@
 椿ウヰキ
-Copyright (c) 2010, Yutaka kachi
-All rights reserved.
+Copyright (c) 2010, Yutaka kachi All rights reserved.
 
 ソースコード形式かバイナリ形式か、変更するかしないかを問わず、以下の条件を満たす場合に限り、再頒布および使用が許可されます。
 
