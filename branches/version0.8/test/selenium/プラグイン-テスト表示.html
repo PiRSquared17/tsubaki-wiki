@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="" />
+<title>プラグイン-テスト表示</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">プラグイン-テスト表示</td></tr>
+</thead><tbody>
+<!--◎プラグイン - テスト表示（testmsg.nako)をテストする -->
+<!--◎テスト表示-->
+<tr>
+	<td>open</td>
+	<td>tsubaki-wiki.nako?plugins_test-msg</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>椿ウヰキ ： plugins_test-msg</td>
+	<td></td>
+</tr>
+<!--◎情報を入力-->
+<tr>
+	<td>type</td>
+	<td>mymsg</td>
+	<td>あいうえお</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//input[@value='OK']</td>
+	<td></td>
+</tr>
+<!--◎メッセージをテスト表示-->
+<tr>
+	<td>assertTitle</td>
+	<td>椿ウヰキ ： plugins_test-msg</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>プラグイン起動中</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>mypage：plugins_test-msg</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>mymsg：あいうえお</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>ページ：plugins_test-msg</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>myplugin：test_msg</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>mycmd：plugin</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

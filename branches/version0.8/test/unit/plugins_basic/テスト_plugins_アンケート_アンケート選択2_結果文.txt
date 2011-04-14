@@ -1,0 +1,12 @@
+<form action="tsubaki-wiki.nako" method="post">
+		<input type="hidden" name="mycmd" value="plugin">
+		<input type="hidden" name="myplugin" value="questions_answer">
+		<input type="hidden" name="mypage" value="plugins_test_questions-zzz">
+		<div>
+		回答を選択：<br>ページがありません<br>
+		コメント　：<br>
+		<input type="text" name="mymsg" style="width:400px;"><br><br>
+		投稿キー：<input type="password" name="post_key" size="15" maxlength="30">
+		<input type="submit" value="投稿">
+		</div>
+	</form>
