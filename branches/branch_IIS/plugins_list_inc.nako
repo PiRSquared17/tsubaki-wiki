@@ -1,8 +1,0 @@
-＃プラグイン取込プログラム_内部
-    ＃自動生成 Date2010/12/12, Time00:06:59
-!"plugins\basics\inc_article.nako"を取り込む
-!"plugins\basics\inc_comment_line.nako"を取り込む
-!"plugins\samples\inc_hello.nako"を取り込む
-!"plugins\samples\inc_jump_page.nako"を取り込む
-!"plugins\samples\inc_test_msg.nako"を取り込む
-
