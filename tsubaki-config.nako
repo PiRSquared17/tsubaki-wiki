@@ -1,14 +1,12 @@
-
 #---- 初期設定 ----
 サイト名=「椿ウヰキ」
-バージョン＝「Ver 0.8」
+バージョン＝「Ver 0.8+VPS-IIS改」
 著作権表示＝「Copyright 2010-2011 Yutaka Kachi」
 
+#DBファイルパス＝「home」	#XAMPP用、IIS用
 
-DBファイルパス＝「home」	#XAMPP用
-
-#ホームパス＝母艦パス					#tsukaeru.net用
-#DBファイルパス＝「{ホームパス}home」	#tsukaeru.net用
+ホームパス＝母艦パス					#VPS用（tsukaeru.netなど）
+DBファイルパス＝「{ホームパス}home」	#VPS用（tsukaeru.netなど）
 
 スクリプトURL＝「tsubaki-wiki.nako」
 テストフォルダ＝「C:\Documents and Settings\kachi\My Documents\SVN\tsubaki-wiki\」&「test\」
@@ -27,8 +25,8 @@ HTMLコンテンツ型＝「Content-type: text/html; charset=Shift_JIS」
 処理フォームとは、ハッシュ
 
 #テーマ設定
-テーマパス＝「theme」	#XAMPP用
-#テーマパス＝「{ホームパス}\theme」	#tsukaeru.net用
+#テーマパス＝「theme」	#XAMPP用、IIS用
+テーマパス＝「{ホームパス}\theme」	#VPS用（tsukaeru.netなど）
 
 ヘッダーファイル＝テーマパス&「\header.html」
 フッターファイル＝テーマパス&「\footer.html」
