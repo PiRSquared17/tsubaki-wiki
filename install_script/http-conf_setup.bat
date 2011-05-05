@@ -1,1 +1,0 @@
-hdconf_setup.exe "C:\xampp\apache\conf"

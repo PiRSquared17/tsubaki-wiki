@@ -124,8 +124,8 @@ UserInfoNameRequired=ユーザー名を入力してください。
 WizardSelectDir=インストール先の指定
 ;SelectDirDesc=[name] のインストール先を指定してください。
 ;SelectDirLabel3=[name] をインストールするフォルダを指定して、「次へ」をクリックしてください。
-XAMPPのインストール先を指定してください。
-XAMPPをインストールするフォルダを指定して、「次へ」をクリックしてください。
+SelectDirDesc=XAMPPのインストール先を指定してください。
+SelectDirLabel3=XAMPPをインストールしたフォルダを指定して、「次へ」をクリックしてください。
 SelectDirBrowseLabel=続けるには「次へ」をクリックしてください。別のフォルダを選択するには「参照」をクリックしてください。
 DiskSpaceMBLabel=このプログラムは最低 [mb] MBのディスク空き領域を必要とします。
 ToUNCPathname=セットアップはUNCフォルダにインストールすることができません。ネットワークにインストールする場合はネットワークドライブに割り当ててください。
