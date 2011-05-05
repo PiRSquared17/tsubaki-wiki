@@ -6,6 +6,8 @@
 ・椿ウヰキの最新版を用意する
 　copy_tsubaki-wiki.bat
 
+・インストーラ作成スクリプト中のバージョン番号を修正
+
 ・インストーラ作成スクリプトを実行
 　tsubaki-wiki_installer_script.iss
 
