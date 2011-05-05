@@ -21,6 +21,5 @@ xcopy ..\theme input\tsubaki-wiki\theme\ /s /e /c /h /r /k /y /v /f
 erase /q input\tsubaki-wiki\plugins\*.*
 xcopy ..\plugins input\tsubaki-wiki\plugins\ /s /e /c /h /r /k /y /v /f 
 erase /q input\tsubaki-wiki\docs\*.*
-xcopy ..\docss input\tsubaki-wiki\plugins\ /s /e /c /h /r /k /y /v /f
+xcopy ..\docs input\tsubaki-wiki\docs\ /s /e /c /h /r /k /y /v /f
 
-pause
